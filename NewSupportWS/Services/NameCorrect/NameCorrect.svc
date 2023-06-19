@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="NewSupportWS.Services.NameCorrect.NameCorrect" CodeBehind="NameCorrect.svc.cs" %>

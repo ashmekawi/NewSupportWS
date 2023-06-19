@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="NewSupportWS.Services.Damg.DamgPerNameID" CodeBehind="DamgPerNameID.svc.cs" %>

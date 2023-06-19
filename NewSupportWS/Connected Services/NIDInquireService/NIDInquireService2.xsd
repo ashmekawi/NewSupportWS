@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Presentation.NIDInquire" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Presentation.NIDInquire" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="NIDInquireRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NationalId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NIDInquireRequest" nillable="true" type="tns:NIDInquireRequest" />
+  <xs:complexType name="NIDInquireResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:NIDInquireResult" />
+      <xs:element minOccurs="0" name="ResponseCode" type="xs:int" />
+      <xs:element minOccurs="0" name="ResponseMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NIDInquireResponse" nillable="true" type="tns:NIDInquireResponse" />
+  <xs:complexType name="NIDInquireResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FamilyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InsuranceNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NationalId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MotherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Governorate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NIDInquireResult" nillable="true" type="tns:NIDInquireResult" />
+</xs:schema>

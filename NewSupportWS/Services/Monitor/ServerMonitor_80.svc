@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="NewSupportWS.Services.Monitor.ServerMonitor_80" CodeBehind="ServerMonitor_80.svc.cs" %>
